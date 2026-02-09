@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-epanet"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "numpy",
+    "faiss-cpu",
+    "langchain",
+    # s"langchain-community",
+    "langchain-openai",
+    "langchain-voyageai",
+    "langchain-nvidia-ai-endpoints",
+    "openai",
+    "matplotlib",
+    "epyt",
+    "streamlit",
+    "anthropic>=0.76.0",
+    "llm-sandbox[docker]>=0.3.33",
+    "jupyter>=1.1.1",
+    "ipykernel>=7.1.0",
+    "rank-bm25>=0.2.2",
+]
+requires-python = ">=3.10,<4.0"
+authors = [
+  {name = "Yinon Goldshtein", email = "yinong@cs.technion.ac.il"},
+  {name = "Gal Perelman", email = "gal-p@campus.technion.ac.il"},
+]
+
+description = "A framework for interacting with EPANET code using natural language"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["EPANET", "EPyT", "Water Distribution Systems"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Water Engineers",
+    "Programming Language :: Python",
+    "License :: Apache 2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "anthropic",
+    "ipykernel",
+    "tqdm",
+    "jupyter",
+    "ipykernel",
+]
+langchain = [
+    "langgraph",
+    "langgraph-sdk",
+    "pydantic",
+]
+
+[tool.setuptools]
+packages = ["llm_epanet"]
+
+[tool.setuptools.package-dir]
+llm_epanet = "llm_epanet"

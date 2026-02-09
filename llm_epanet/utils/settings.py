@@ -1,0 +1,12 @@
+import os
+
+VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY")
+NVIDIA_API_KEY = os.getenv("NVIDIA_NIM_API_KEY")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
+
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+ANTHROPIC_LARGE_MODEL = "claude-3-7-sonnet-20250219"
+
+MAX_ITERATIONS = 250
