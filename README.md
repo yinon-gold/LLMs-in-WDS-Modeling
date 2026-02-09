@@ -119,3 +119,17 @@ Example:
 ```bash
 uv run tests/query_tests.py --network pa --prompt complex --num_retries 5 --large_model qwen/qwen2.5-vl-72b-instruct --small_model qwen/qwen-2.5-coder-32b-instruct -k 5 -t 0.7 --num_threads 10 --sandbox
 ```
+
+## Citation
+If you use this repository for your research, please consider citing:
+```bibtex
+@misc{goldshtein2025largelanguagemodelswater,
+      title={Large Language Models for Water Distribution Systems Modeling and Decision-Making}, 
+      author={Yinon Goldshtein and Gal Perelman and Assaf Schuster and Avi Ostfeld},
+      year={2025},
+      eprint={2503.16191},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2503.16191}, 
+}
+```
