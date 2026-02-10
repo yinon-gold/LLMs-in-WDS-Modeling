@@ -1,4 +1,4 @@
-# LLM-EPANET: A Benchmark for Evaluating LLMs on EPANET-Related Tasks
+# Large Language Models for Water Distribution Systems Modeling and Decision-Making
 
 [![Python](https://shields.io/badge/Python-3.10-blue?logo=python&style=for-the-badge)](https://www.python.org/)
 
