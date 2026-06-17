@@ -23,6 +23,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "ipykernel>=7.1.0",
     "rank-bm25>=0.2.2",
+    "langchain-community>=0.4.2",
 ]
 requires-python = ">=3.10,<4.0"
 authors = [
